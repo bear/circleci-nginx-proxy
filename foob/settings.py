@@ -11,9 +11,7 @@ _cwd = os.path.dirname(os.path.abspath(__file__))
 
 class Config(object):
     SECRET_KEY = "foob"
-    BASEURL    = 'http://127.0.0.1:5000'
-    BASE_ROUTE = '/'
-    LOG_FILE   = os.path.join(_cwd, 'foob.log')
+    TEMPLATES  = os.path.join(_cwd, 'templates')
 
 class ProdConfig(Config):
     ENV   = 'prod'

@@ -11,7 +11,7 @@ import logging.handlers
 from flask import Flask
 
 from foob.controllers.main import main
-from kaku.extensions import (
+from foob.extensions import (
     debug_toolbar,
 )
 
@@ -44,8 +44,8 @@ def create_app(object_name):
         wzlog.setLevel(logging.DEBUG)
         wzlog.addHandler(handler)
 
-    if app.config['SITE_TEMPLATES'] is not None:
-        app.jinja_loader = jinja2.FileSystemLoader(app.config['SITE_TEMPLATES'])
+    if app.config['TEMPLATES'] is not None:
+        app.jinja_loader = jinja2.FileSystemLoader(app.config['TEMPLATES'])
 
     # initialize the debug tool bar
     debug_toolbar.init_app(app)

@@ -1,5 +1,4 @@
 Flask>=0.11.1
-uWSGI==2.0.13.1
 
 # Flask Extensions
 Flask-DebugToolbar>=0.10.0

@@ -12,6 +12,5 @@ main = Blueprint('main', __name__)
 
 @main.route('/', methods=['GET',])
 def indexPage():
-    do_something_wrong()
     templateContext = {}
     return render_template('index.jinja', **templateContext)
