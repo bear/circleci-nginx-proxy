@@ -44,3 +44,4 @@ coverage.xml
 .pydevproject
 
 violations.flake8.txt
+.python-version
