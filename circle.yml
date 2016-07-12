@@ -8,4 +8,4 @@ test:
     - lsb_release -a
     - make info
   override:
-    - make ci
+    - make server

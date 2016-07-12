@@ -8,7 +8,7 @@ install:
 clean:
 	python manage.py clean
 
-test: clean
+lint: clean
 	@rm -f violations.flake8.txt
 	flake8 --exclude=env --exclude=archive . > violations.flake8.txt
 
