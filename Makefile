@@ -2,7 +2,7 @@
 
 
 install:
-	pip install uwsgi
+	pip install -U pip
 	pip install -Ur requirements.txt
 
 clean:

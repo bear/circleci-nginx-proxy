@@ -1,7 +1,6 @@
 dependencies:
   override:
-    - pip install -U pip
-    - make install-dev
+    - make install
 
 test:
   pre:
